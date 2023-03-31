@@ -39,7 +39,7 @@ struct stats{
 // output: delay in seconds
 inline double poissonDelay(const double lambda){
     // Adapted to fit the edge cases of std::rand() value. Absolute pain to debug :(
-    return -log(1.0-((double)(std::rand()+1)/(RAND_MAX+2)))/lambda;
+    return -log(1.0-(((double)std::rand()+1)/((double)RAND_MAX+2)))/lambda;
 }
 
 // runSimulation Runs the simulated system until n cycles are completed
