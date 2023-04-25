@@ -4,6 +4,7 @@
 #include <string>
 #include <algorithm>
 #include <numeric>
+#include <cstdio>
 
 pthread_mutex_t dealerMutex;
 pthread_mutex_t playerMutex;
